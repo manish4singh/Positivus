@@ -52,15 +52,6 @@ a:hover {
   padding: 0 15px;
 }
 
-.nav-logo {
-  flex-basis: 18%;
-  padding: 10px 0;
-}
-
-.nav-logo > img {
-  width: 100%;
-  object-fit: contain;
-}
 
 .nav-links {
   display: flex;
@@ -179,19 +170,306 @@ a:hover {
   object-fit: contain;
 }
 
+/* Media Queries using @media screen and (max-width: ...) (from larger to smaller, down to 300px) */
 
-/* Responsive Design */
+/* For screens up to 1199px (large tablets and smaller desktops) */
+@media screen and (max-width: 1199px) {
+  .header-section {
+    margin-top: 50px;
+  }
 
-@media screen and (max-width:1024px){
+  .header-section > div > div {
+    padding: 0 30px;
+  }
 
-    .banner-content > h1 {
-        font-size: 45px;
-    }
+  .nav-links > ul {
+    gap: 30px;
+  }
 
-    .company-logos-content{
-        gap: 52px;
-    }
+  .quote-btn {
+    padding: 18px 30px;
+    border-radius: 12px;
+    font-size: 1rem;
+  }
 
+  .banner-section {
+    min-height: auto; /* Adjust min-height */
+    margin-top: 50px;
+    padding: 50px 30px;
+  }
 
-    
+  .banner-section > div > div {
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .banner-content {
+    max-width: 50%;
+    max-height: auto; /* Adjust max-height */
+  }
+
+  .banner-content > h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
+
+  .banner-content > p {
+    font-size: 19px;
+    line-height: 27px;
+    margin-block: 30px;
+  }
+
+  .book-consultant {
+    width: 240px;
+    padding: 18px 35px;
+    border-radius: 12px;
+    font-size: 1rem;
+  }
+
+  .banner-img {
+    width: 50%;
+    height: auto;
+  }
+
+  .company-logos-section {
+    margin-top: 60px;
+    padding: 30px;
+  }
+
+  .company-logos-section > div > div {
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .company-logos-content {
+    gap: 60px;
+  }
+
+  .company-logos-content > div {
+    width: auto; /* Adjust width */
+    height: auto; /* Adjust height */
+    max-width: 150px;
+    max-height: 50px;
+  }
+}
+
+/* For screens up to 991px (tablets) */
+@media screen and (max-width: 991px) {
+  .header-section {
+    margin-top: 40px;
+  }
+
+  .nav-links {
+    display: none !important; /* Hide navigation links */
+  }
+
+  .ham-menu {
+    display: block; /* Show hamburger menu */
+    color: var(--btn-bg-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  #menu:checked ~ .nav-links {
+    display: flex; /* Show navigation links when menu is checked */
+    justify-content: center;
+  }
+
+  .nav-links > ul {
+    flex-basis: 100%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .banner-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .banner-section > div > div {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .banner-content {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .banner-content > h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .banner-content > p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-block: 25px;
+  }
+
+  .book-consultant {
+    width: auto;
+  }
+
+  .banner-img {
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .company-logos-section {
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  .company-logos-section > div > div {
+    justify-content: space-around;
+    gap: 30px;
+  }
+
+  .company-logos-content {
+    gap: 40px;
+  }
+
+  .company-logos-content > div {
+    flex-basis: calc(33.33% - 40px);
+    max-width: none;
+    max-height: none;
+  }
+}
+
+/* For screens up to 767px (mobile devices) */
+@media screen and (max-width: 767px) {
+  .header-section {
+    margin-top: 30px;
+  }
+
+  .quote-btn {
+    padding: 15px 25px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+  }
+
+  .banner-section {
+    padding: 30px 15px;
+  }
+
+  .banner-content > h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .banner-content > p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-block: 20px;
+  }
+
+  .book-consultant {
+    width: 38%;
+  }
+
+  .banner-img {
+    width: 100%;
+  }
+
+  .company-logos-section {
+    margin-top: 40px;
+    padding: 15px;
+  }
+
+  .company-logos-section > div > div {
+    gap: 20px;
+  }
+
+  .company-logos-content {
+    gap: 20px;
+  }
+
+  .company-logos-content > div {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+/* For screens up to 600px */
+@media screen and (max-width: 600px) {
+  .banner-content > h1 {
+    font-size: 28px;
+  }
+
+  .banner-content > p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-block: 15px;
+  }
+
+  .company-logos-content > div {
+    flex-basis: calc(100% - 20px); /* One logo per row */
+  }
+}
+
+/* For screens up to 480px */
+@media screen and (max-width: 480px) {
+  .header-section {
+    margin-top: 20px;
+  }
+
+  .quote-btn {
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    border-radius: 8px;
+  }
+
+  .banner-content > h1 {
+    font-size: 24px;
+  }
+
+  .banner-content > p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-block: 10px;
+  }
+
+  .book-consultant {
+    padding: 15px;
+    font-size: 0.7rem;
+  }
+
+  .company-logos-section {
+    margin-top: 30px;
+  }
+}
+
+/* For screens up to 300px */
+@media screen and (max-width: 300px) {
+  .header-section {
+    margin-top: 15px;
+  }
+
+  .quote-btn {
+    padding: 8px 15px;
+    font-size: 0.7rem;
+    border-radius: 6px;
+  }
+
+  .banner-content > h1 {
+    font-size: 20px;
+  }
+
+  .banner-content > p {
+    font-size: 13px;
+    line-height: 18px;
+    margin-block: 8px;
+  }
+
+  .book-consultant {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+
+  .company-logos-section {
+    margin-top: 20px;
+  }
 }
