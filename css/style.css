@@ -177,7 +177,6 @@ a:hover {
 .services-section > div > div {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 0 15px;
 }
 
@@ -186,6 +185,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  margin-bottom: 60px;
 }
 
 .services-content > h2 {
@@ -230,6 +230,8 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  gap: 110px;
 }
 
 .service-card-1,
@@ -285,6 +287,28 @@ a:hover {
   height: 100%;
   object-fit: contain;
 }
+
+.service-card-btn {
+  align-self: start;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card-btn > i {
+  font-size: 2rem;
+  transform: rotate(330deg);
+}
+
+.service-card-3 > div > div > i,
+.service-card-6 > div > div > i {
+  color: #ffffff !important;
+  font-size: 2rem;
+  transform: rotate(330deg);
+}
+
+/* Testimonials Section */
 
 /* Media Queries using @media screen and (max-width: ...) (from larger to smaller, down to 300px) */
 
