@@ -250,7 +250,6 @@ a:hover {
 .service-card-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 93px;
   flex-direction: column;
 }
@@ -529,6 +528,9 @@ a:hover {
     gap: 10px;
     position: relative;
     align-items: center;
+    padding: 10px 0;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px #00000030;
   }
 
   .nav-links > ul {
@@ -708,11 +710,11 @@ a:hover {
   .service-card-4,
   .service-card-5,
   .service-card-6 {
-    width: 100%; /* Ensure cards take full width */
+    width: 100%;
     align-items: center;
-    gap: 15px; /* Add spacing between content inside the card */
-    padding: 50px; /* Adjust padding for smaller screens */
-    border-radius: 20px; /* Maintain rounded corners */
+    gap: 170px;
+    padding: 20px;
+    border-radius: 20px;
   }
 
   .service-card-img {
@@ -726,7 +728,35 @@ a:hover {
   }
 
   .service-card-btn {
+    gap: 10px; /* Adjust gap between icon and text */
     justify-content: center; /* Center-align button */
+  }
+
+  .learn-more {
+    padding: 15px 25px; /* Adjust padding for smaller screens */
+    font-size: 0.9rem; /* Adjust font size */
+    border-radius: 10px; /* Adjust border radius */
+  }
+
+  .services-section-2 > div > div {
+    flex-direction: column;
+    padding: 20px;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .services-content-2 > h2 {
+    font-size: 26px;
+  }
+
+  .services-content-2 > p {
+    font-size: 16px;
+    margin-block: 20px;
+  }
+
+  .proposal-btn {
+    padding: 16px 28px;
+    font-size: 16px;
   }
 }
 
@@ -792,7 +822,13 @@ a:hover {
   .service-card-4,
   .service-card-5,
   .service-card-6 {
+    gap: 75px;
     padding: 10px;
+  }
+
+  .learn-more {
+    padding: 10px 10px;
+    font-size: 0.8rem;
   }
 
   .service-card-img {
@@ -806,6 +842,81 @@ a:hover {
 
   .service-card-btn > i {
     font-size: 1.5rem; /* Adjust icon size */
+  }
+
+  .services-section-2 {
+    padding: 16px 0;
+  }
+
+  .services-section-2 > div > div {
+    border-radius: 30px;
+    padding: 15px;
+  }
+
+  .services-content-2 > h2 {
+    font-size: 22px;
+  }
+
+  .services-content-2 > p {
+    font-size: 15px;
+    margin-block: 16px;
+  }
+
+  .proposal-btn {
+    padding: 14px 24px;
+    font-size: 14px;
+  }
+}
+
+/* For screens up to 320px */
+@media screen and (max-width: 320px) {
+  .header-section {
+    margin-top: 18px;
+  }
+
+  .quote-btn {
+    padding: 9px 18px;
+    font-size: 0.75rem;
+    border-radius: 7px;
+  }
+
+  .banner-content > h1 {
+    font-size: 22px;
+  }
+
+  .banner-content > p {
+    font-size: 14px;
+    line-height: 19px;
+    margin-block: 9px;
+  }
+
+  .book-consultant {
+    padding: 12px;
+    font-size: 0.75rem;
+  }
+
+  .company-logos-section {
+    margin-top: 25px;
+  }
+
+  .service-card-content > h3 {
+    font-size: 18px;
+  }
+
+  .service-card-btn > i {
+    font-size: 1.4rem;
+  }
+  .services-content-2 > h2 {
+    font-size: 20px;
+  }
+
+  .services-content-2 > p {
+    font-size: 14px;
+  }
+
+  .proposal-btn {
+    padding: 12px 20px;
+    font-size: 13px;
   }
 }
 
@@ -839,4 +950,16 @@ a:hover {
   .company-logos-section {
     margin-top: 20px;
   }
+
+  .service-card-1,
+  .service-card-2,
+  .service-card-3,
+  .service-card-4,
+  .service-card-5,
+  .service-card-6 {
+    gap: 50px;
+    padding: 10px;
+  }
 }
+
+/*  */
